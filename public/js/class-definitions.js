@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -335,7 +336,17 @@ function installLinux(typeOfLinux) {
  * @return {Bool when False, String when True}
  *
  */
-
+function drink(beer) {
+  if(beers.hasOwnProperty(beerToDrink)){
+    if(typeof beers[beerToDrink] === 'object'){
+      return "This " + beerToDrink + " is " + beers[beerToDrink][0] + " and " + beers[beerToDrink][1] + " and...";
+    } else {
+      return "This " + beerToDrink + " is " + beers[beerToDrink] + ".";
+    }
+  } else {
+    return false;
+  }
+}
 
 /* Step 24
  *
