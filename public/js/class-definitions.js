@@ -5,7 +5,7 @@
  * then set it's value to null;
  *
  */
-let unicorn = null;
+  let unicorn = null;
 
 /* Step 2
  *
@@ -13,7 +13,7 @@ let unicorn = null;
  * then assign it to be the value of "Atari"
  *
  */
-let videogame_system = 'Atari';
+  let videogame_system = 'Atari';
 
 /* Step 3
  *
@@ -21,7 +21,7 @@ let videogame_system = 'Atari';
  * and assign the value of sahara_animal to "The Addax"
  *
  */
-let sahara_animal = 'The Addax';
+  let sahara_animal = 'The Addax';
 
 /* Step 4
  *
@@ -30,7 +30,7 @@ let sahara_animal = 'The Addax';
  * each planet in our solar system, in order of distance from the sun
  * Capitalize the names.
  */
-let planets = ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune'];
+  let planets = ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune'];
 
 /* Step 5
  *
@@ -39,7 +39,7 @@ let planets = ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Nep
  * each galilean moon of Jupiter
  *
  */
-let galilean_moons = ['Io','Europa','Ganymede','Callisto'];
+  let galilean_moons = ['Io','Europa','Ganymede','Callisto'];
 
 /* Step 6 φ
  *
@@ -47,7 +47,7 @@ let galilean_moons = ['Io','Europa','Ganymede','Callisto'];
  * and assign the value of golden_ratio to 1.61803398874
  *
  */
-let golden_ratio = 1.61803398874;
+  let golden_ratio = 1.61803398874;
 
 /* Step 7
  *
@@ -55,7 +55,7 @@ let golden_ratio = 1.61803398874;
  * and assign the value of earths_water_composition to 0.71
  *
  */
-let earths_water_composition = 0.71;
+  let earths_water_composition = 0.71;
 
 /* Step 8
  *
@@ -63,7 +63,7 @@ let earths_water_composition = 0.71;
  * and assign the value of club_name to "Fight Club"
  *
  */
-let club_name = 'Fight Club';
+  let club_name = 'Fight Club';
 
 /* Step 9
  *
@@ -74,11 +74,11 @@ let club_name = 'Fight Club';
  *   male    => "male"
  *   unknown => undefined
  */
-let gender = {
-  female : 'female',
-  male : 'male',
-  unknown : undefined
-};
+  let gender = {
+    female : 'female',
+    male : 'male',
+    unknown : undefined
+  };
 
 /* Step 10
  *
@@ -92,12 +92,12 @@ let gender = {
  *   gender  => gender.female
  *
  */
-let princess_leia = {
-  name : 'Leia Organa',
-  money : '890',
-  age : 20,
-  gender : gender.female
-};
+  let princess_leia = {
+    name : 'Leia Organa',
+    money : '890',
+    age : 20,
+    gender : gender.female
+  };
 
 /* Step 11
  *
@@ -111,12 +111,12 @@ let princess_leia = {
  *
  */
 
- let domains = {
-  'ycombinator.com' : '198.41.190.47',
-  'laughingsquid.com' : '162.159.247.97',
-  'slumlordhosting.com' : '198.61.179.126',
-  'jsonformatter.curiousconcept.com' : '104.28.5.70'
- };
+  let domains = {
+   'ycombinator.com' : '198.41.190.47',
+   'laughingsquid.com' : '162.159.247.97',
+   'slumlordhosting.com' : '198.61.179.126',
+   'jsonformatter.curiousconcept.com' : '104.28.5.70'
+  };
 /* Step 12
  *
  * Define a literal object named "browsers"
@@ -130,14 +130,14 @@ let princess_leia = {
  *   Konqueror  => "konqueror.org"
  *
  */
- let browsers = {
-  Chromium : 'google.com',
-  Safari : 'apple.com',
-  Opera : 'opera.com',
-  Firefox : 'mozilla.org',
-  Sleipnir : 'fenrir-inc.com',
-  Konqueror : 'konqueror.org'
- };
+  let browsers = {
+    Chromium : 'google.com',
+    Safari : 'apple.com',
+    Opera : 'opera.com',
+    Firefox : 'mozilla.org',
+    Sleipnir : 'fenrir-inc.com',
+    Konqueror : 'konqueror.org'
+  };
 
 /* Step 13
  *
@@ -155,17 +155,17 @@ let princess_leia = {
  *  isDouble  => true
  *
  */
-let rainbow = {
-  colors : {
-  red : "#F0280A",
-  orange : "#FF8800",
-  yellow : "#FFDD00",
-  green : "#51AB0C",
-  blue : "#1593ED",
-  indigo : "#5215ED",
-  violet : "#A915ED"},
-  isDouble : true
-};
+  let rainbow = {
+    colors : {
+    red : "#F0280A",
+    orange : "#FF8800",
+    yellow : "#FFDD00",
+    green : "#51AB0C",
+    blue : "#1593ED",
+    indigo : "#5215ED",
+    violet : "#A915ED"},
+    isDouble : true
+  };
 
 
 /* Step 14
@@ -181,8 +181,8 @@ let rainbow = {
  * "Bieber Linux"
  *
  */
-let linuxFlavors = ['Gentoo','Fedora','Debian',
-'Slackware','Red Hat','Bieber Linux'];
+  let linuxFlavors = ['Gentoo','Fedora','Debian',
+  'Slackware','Red Hat','Bieber Linux'];
 
 /* Step 15
  *
@@ -196,7 +196,7 @@ let linuxFlavors = ['Gentoo','Fedora','Debian',
  * "cytosine"
  *
  */
-let DNA = ['nucleatides','guanine','adenine','thymine','cytosine'];
+  let DNA = ['nucleatides','guanine','adenine','thymine','cytosine'];
 
 /* Step 16
  *
@@ -209,12 +209,12 @@ let DNA = ['nucleatides','guanine','adenine','thymine','cytosine'];
  * Surface      => 320
  *
  */
-let laptopCosts = {
-  MacBook : 1500,
-  Alienware : 2500,
-  HP : 499,
-  Surface : 320
-};
+  let laptopCosts = {
+    MacBook : 1500,
+    Alienware : 2500,
+    HP : 499,
+    Surface : 320
+  };
 
 /* Step 17
  *
@@ -230,8 +230,8 @@ let laptopCosts = {
  * "Species"
  *
  */
-let livingOrganismClassification = ['Kingdom','Phylum',
-'Class','Order','Family','Genus','Species'];
+  let livingOrganismClassification = ['Kingdom','Phylum',
+  'Class','Order','Family','Genus','Species'];
 
 /* Step 18
  *
@@ -245,7 +245,7 @@ let livingOrganismClassification = ['Kingdom','Phylum',
  * "cvs"
  *
  */
-let scmList = ['git','svn','mercurial','bazaar','cvs'];
+  let scmList = ['git','svn','mercurial','bazaar','cvs'];
 
 /* Step 19
  *
@@ -264,14 +264,14 @@ let scmList = ['git','svn','mercurial','bazaar','cvs'];
  *                  "Golden"
  *
  */
-let beers = {
-  IPA : 'Ale',
-  Lager : 'Strong',
-  Heffeweisen : 'German',
-  Stout : ['Thick','Dark'],
-  Porter : 'Bitter',
-  Ale : ['Light','Golden']
-};
+  let beers = {
+    IPA : 'Ale',
+    Lager : 'Strong',
+    Heffeweisen : 'German',
+    Stout : ['Thick','Dark'],
+    Porter : 'Bitter',
+    Ale : ['Light','Golden']
+  };
 
 /* Step 20
  *
@@ -281,9 +281,9 @@ let beers = {
  * @return {String}
  *
  */
-function sahara_river() {
-  return 'Nile River';
- }
+  function sahara_river() {
+    return 'Nile River';
+  }
 
 /* Step 21
  *
@@ -295,9 +295,9 @@ function sahara_river() {
  * @return {Number}
  *
  */
-function addNumbers(num1, num2) {
-  return num1 + num2;
-}
+  function addNumbers(num1, num2) {
+    return num1 + num2;
+  }
 
 /* Step 22
  *
@@ -310,15 +310,15 @@ function addNumbers(num1, num2) {
  * @return {Bool}
  *
  */
-function installLinux(typeOfLinux) {
-  if (linuxFlavors.indexOf(typeOfLinux) > -1) {
-    console.log('success');
-    return true;
-  } else {
-    console.log('failure');
-    return false;
+  function installLinux(typeOfLinux) {
+    if (linuxFlavors.indexOf(typeOfLinux) > -1) {
+      console.log('success');
+      return true;
+    } else {
+      console.log('failure');
+      return false;
+    }
   }
-}
 /* Step 23
  *
  * Define a function named "drink" that takes
@@ -336,17 +336,17 @@ function installLinux(typeOfLinux) {
  * @return {Bool when False, String when True}
  *
  */
-function drink(beerToDrink) {
-  if(beers.hasOwnProperty(beerToDrink)){
-    if(typeof beers[beerToDrink] === 'object'){
-      return "This " + beerToDrink + " is " + beers[beerToDrink][0] + " and " + beers[beerToDrink][1] + " and...";
+  function drink(beerToDrink) {
+    if(beers.hasOwnProperty(beerToDrink)){
+      if(typeof beers[beerToDrink] === 'object'){
+        return "This " + beerToDrink + " is " + beers[beerToDrink][0] + " and " + beers[beerToDrink][1] + " and...";
+      } else {
+        return "This " + beerToDrink + " is " + beers[beerToDrink] + ".";
+      }
     } else {
-      return "This " + beerToDrink + " is " + beers[beerToDrink] + ".";
+      return false;
     }
-  } else {
-    return false;
   }
-}
 
 /* Step 24
  *
@@ -359,13 +359,13 @@ function drink(beerToDrink) {
  * @return {String if true else return false}
  *
  */
-function browseURL(browser) {
-  if(browsers.hasOwnProperty(browser)){
-    return browsers[browser];
-  }else{
-    return false;
+  function browseURL(browser) {
+    if(browsers.hasOwnProperty(browser)){
+      return browsers[browser];
+    }else{
+      return false;
+    }
   }
-}
 
 /* Step 25
  *
@@ -376,7 +376,16 @@ function browseURL(browser) {
  * @return {String}
  *
  */
+ function listLivingOrgClass(){
+  var UlOrg = document.createElement('ul');
+  for(let i = 0; i < livingOrganismClassification.length; i++){
+    var LiOrg = document.createElement('li');
+    LiOrg.innerHTML = livingOrganismClassification[i];
+    UlOrg.appendChild(LiOrg);
+  }
+   return UlOrg.outerHTML;
 
+ }
 
 /* Step 26
  *
@@ -397,7 +406,9 @@ function browseURL(browser) {
  * @return {String}
  *
  */
+  function favoritePlanet() {
 
+  }
 
 /* Step 27
  *
