@@ -195,7 +195,7 @@ let linuxFlavors = ['Gentoo','Fedora','Debian',
  * "cytosine"
  *
  */
-
+let DNA = ['nucleatides','guanine','adenine','thymine','cytosine'];
 
 /* Step 16
  *
