@@ -12,7 +12,7 @@ let unicorn = null;
  * then assign it to be the value of "Atari"
  *
  */
-
+let videogame_system = 'Atari';
 
 /* Step 3
  *
