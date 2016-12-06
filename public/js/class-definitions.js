@@ -436,9 +436,21 @@
  *   spendMoney
  *   earnMoney
  *
- */
-
-
+   */
+  class Person{
+    constructor (name, money, age, gender) {
+      this.name = name;
+      this.money = money;
+      this.age = age;
+      this.gender = gender;
+    }
+   spendMoney(zenny){
+    return this.money -= zenny;
+  }
+   earnMoney(zenny){
+    return this.money += zenny;
+  }
+ }
 /* Step 28
  *
  * Define a function named "purchaseLaptop" that takes
