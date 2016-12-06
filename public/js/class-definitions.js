@@ -336,7 +336,7 @@ function installLinux(typeOfLinux) {
  * @return {Bool when False, String when True}
  *
  */
-function drink(beer) {
+function drink(beerToDrink) {
   if(beers.hasOwnProperty(beerToDrink)){
     if(typeof beers[beerToDrink] === 'object'){
       return "This " + beerToDrink + " is " + beers[beerToDrink][0] + " and " + beers[beerToDrink][1] + " and...";
@@ -359,7 +359,13 @@ function drink(beer) {
  * @return {String if true else return false}
  *
  */
-
+function browseURL(browser) {
+  if(browsers.hasOwnProperty(browser)){
+    return browsers[browser];
+  }else{
+    return false;
+  }
+}
 
 /* Step 25
  *
