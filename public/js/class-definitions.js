@@ -38,7 +38,7 @@ let planets = ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Nep
  * each galilean moon of Jupiter
  *
  */
-
+let galilean_moons = ['Io','Europa','Ganymede','Callisto'];
 
 /* Step 6 φ
  *
