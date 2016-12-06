@@ -309,8 +309,15 @@ function addNumbers(num1, num2) {
  * @return {Bool}
  *
  */
-
-
+function installLinux(typeOfLinux) {
+  if (linuxFlavors.indexOf(typeOfLinux) > -1) {
+    console.log('success');
+    return true;
+  } else {
+    console.log('failure');
+    return false;
+  }
+}
 /* Step 23
  *
  * Define a function named "drink" that takes
