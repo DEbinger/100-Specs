@@ -462,7 +462,9 @@
  * @return {String}
  *
  */
-
+function purchaseLaptop(laptop) {
+  // body...
+}
 
 /* Step 29
  *
