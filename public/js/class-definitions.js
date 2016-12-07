@@ -508,8 +508,13 @@
  *   write
  *
  */
+function Pen(color) {
+ this.color = color;
+}
 
-
+Pen.prototype.write = function(message) {
+  return `${this.color}: ${message}`;
+};
 /* Step 31
  *
  * Define an ES5 class named "Garden" with a property for
