@@ -575,6 +575,17 @@
  *   removePlanet
  *
  */
+  function SolarSystem(planets) {
+    this.planets = [];
+}
+
+  SolarSystem.prototype.addPlanet = function () {
+    this.planets.push(planets[0]);
+  };
+
+  SolarSystem.prototype.removePlanet = function () {
+    this.planets.pop(planets[0]);
+  };
 
 
 /* Step 33
