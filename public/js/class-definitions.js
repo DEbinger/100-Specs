@@ -1099,44 +1099,46 @@ Scientist.prototype.addDiscovery = function(newton){
 
 
 // Create 2 different species of animals
-var george;
-var nemo;
+
+
+let george = new Animal('Monkey','male');
+let nemo = new Animal('Fish','male');
 
 // Create 2 different vehicles
-var civic;
-var forte;
+let civic = new Vehicle('Honda','Civic');
+let forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
-var square;
-var hexagon;
+let square = new Shape(4);
+let hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox;
-var christmasPresent;
+let catBox = new Box(new Animal('Cat', 'Neutered'), true);
+let christmasPresent = new Box('Sleep', false);
 
 // Create 2 doors
-var automaticDoor;
-var bankVault;
+let automaticDoor = new Door(true);
+let bankVault = new Door(false);
 
 // Create 2 shoes
-var rubySlippers;
-var dressShoes;
+let rubySlippers = new Shoe(7, 'red');
+let dressShoes = new Shoe(10, 'black');
 
 // Create 2 houses
-var singleStory;
-var twoStory;
+let singleStory = new House(1);
+let twoStory = new House(2);
 
 // Create 2 lightbulbs
-var incandescent;
-var halogen;
+let incandescent = new Lightbulb(true);
+let halogen = new Lightbulb(false);
 
 // Create 2 cookies of different flavors
-var chocolateChip;
-var gingerbread;
+let chocolateChip = new Cookie('chocolate');
+let gingerbread = new Cookie('gingerbread');
 
 // Create 2 different meals
-var breakfast;
-var dinner;
+let breakfast = new Meal(['cereal', 'milk']);
+let dinner = new Meal(['fish', 'vegetables']);
 
 
  /* Steps 81 to 90
