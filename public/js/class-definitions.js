@@ -463,7 +463,11 @@
  *
  */
 function purchaseLaptop(laptop) {
-  // body...
+  if(laptopCosts.hasOwnProperty(laptop)){
+    return laptopCosts[laptop].toString();
+    }else{
+      return -1;
+    }
 }
 
 /* Step 29
