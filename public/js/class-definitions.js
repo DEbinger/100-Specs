@@ -959,6 +959,7 @@ Scientist.prototype.addDiscovery = function(newton){
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
+
   class Animal {
     constructor(species, gender) {
       this.species = species;
@@ -974,7 +975,12 @@ Scientist.prototype.addDiscovery = function(newton){
  * @param {string} model The vehicle's model
  */
 
-
+  class Vehicle {
+    constructor(make, model) {
+      this.make = make;
+      this.model = model;
+    }
+  }
 /**
  * Step 52
  *
