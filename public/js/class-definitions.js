@@ -437,20 +437,20 @@
  *   earnMoney
  *
    */
-  class Person{
-    constructor (name, money, age, gender) {
-      this.name = name;
-      this.money = money;
-      this.age = age;
-      this.gender = gender;
-    }
-   spendMoney(zenny){
-    return this.money -= zenny;
-  }
-   earnMoney(zenny){
-    return this.money += zenny;
-  }
- }
+function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+
+Person.prototype.spendMoney = function(zenny){
+  this.money -= zenny;
+};
+
+Person.prototype.earnMoney = function(zenny){
+  this.money += zenny;
+};
 /* Step 28
  *
  * Define a function named "purchaseLaptop" that takes
@@ -626,7 +626,6 @@
 }
 
   PrincessLeia.prototype = Object.create(Person.prototype);
-  mixin(PrincessLeia.prototype);
 
 
   PrincessLeia.prototype.shootsGun = function() {
@@ -639,10 +638,10 @@
     return 'Help me Obi-wan Kenobi, you\'re my only hope';
   };
 
-  PrincessLeia.prototype.marries = function(person){
-  if(person === 'Han Solo'){
+  PrincessLeia.prototype.marries = function(nerfherder){
+  if(nerfherder === 'Han Solo'){
     return true;
-    }else if(person === 'Luke Skywalker'){
+    }else if(nerfherder === 'Luke Skywalker'){
     return "Gross!";
     }else {
     return false;
@@ -665,18 +664,19 @@
  *   staplePapers
  *
  */
- function Stapler(color, maxPapers) {
-   this.color = color;
-   this.maxPapers = maxPapers;
- }
+function Stapler(color, maxPapers) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+}
 
- Stapler.prototype.staplePapers = function(paperBoi) {
-   if(paperBoi <= this.maxPapers){
+Stapler.prototype.staplePapers = function(paperBoi){
+  if(paperBoi <= this.maxPapers){
     return true;
-   }else{
+  } else {
     return false;
-   }
- };
+  }
+};
+
 
 /* Step 35
  *
@@ -716,7 +716,41 @@
  *   addDiscovery
  *
  */
+function Scientist(name, money, age, gender) {
+  Person.call(this, name, money, age, gender);
 
+  this.disciplines = [];
+  this.discoveries = [];
+}
+
+Scientist.prototype = Object.create(Person.prototype);
+
+Scientist.prototype.addDiscipline = function(tesla){
+  this.disciplines.push(tesla);
+  return this.disciplines;
+};
+
+Scientist.prototype.checkDiscipline = function(einstein){
+  if(this.disciplines.indexOf(einstein) > -1){
+    return true;
+  } else {
+    return false;
+  }
+};
+
+Scientist.prototype.addDiscovery = function(newton){
+  this.discoveries.push(newton);
+  switch(true){
+    case this.discoveries.length === 1:
+      return `I discovered ${this.discoveries[0]}.`;
+    case this.discoveries.length === 2:
+      return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`;
+    case this.discoveries.length === 3:
+      return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
+    default:
+      return "Nothing discovered...or too many discoveries but the test passed woohoo";
+  }
+};
 
 /* Step 36
  *
