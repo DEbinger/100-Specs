@@ -620,8 +620,34 @@
  *   marries
  *
  */
+  function PrincessLeia(name, money, age, gender,isInTrouble) {
+    Person.call(this, name, money, age, gender);
+    this.isInTrouble = null;
+}
+
+  PrincessLeia.prototype = Object.create(Person.prototype);
+  mixin(PrincessLeia.prototype);
 
 
+  PrincessLeia.prototype.shootsGun = function() {
+    this.isInTrouble = false;
+      return 'Leia shoots her gun wildly';
+  };
+
+  PrincessLeia.prototype.getsInTrouble = function() {
+    this.isInTrouble = true;
+    return 'Help me Obi-wan Kenobi, you\'re my only hope';
+  };
+
+  PrincessLeia.prototype.marries = function(person){
+  if(person === 'Han Solo'){
+    return true;
+    }else if(person === 'Luke Skywalker'){
+    return "Gross!";
+    }else {
+    return false;
+  }
+};
 /* Step 34
  *
  * Define an ES5 class named "Stapler" with properties "color"
@@ -639,7 +665,18 @@
  *   staplePapers
  *
  */
+ function Stapler(color, maxPapers) {
+   this.color = color;
+   this.maxPapers = maxPapers;
+ }
 
+ Stapler.prototype.staplePapers = function(paperBoi) {
+   if(paperBoi <= this.maxPapers){
+    return true;
+   }else{
+    return false;
+   }
+ };
 
 /* Step 35
  *
