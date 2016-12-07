@@ -1021,7 +1021,11 @@ Scientist.prototype.addDiscovery = function(newton){
  * Door class
  * @param {boolean} isOpen Whether the door is opened or closed
  */
-
+ class Door {
+  constructor(isOpen){
+    this.isOpen = isOpen;
+  }
+ }
 
 /**
  * Step 55
