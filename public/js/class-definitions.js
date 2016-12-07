@@ -772,8 +772,22 @@ Scientist.prototype.addDiscovery = function(newton){
  *   rob
  *
  */
+ function BankAccount(balance, owner) {
+   this.balance = balance;
+   this.owner = owner;
+ }
 
+  BankAccount.prototype.withdraw = function() {
 
+};
+
+  BankAccount.prototype.deposit = function() {
+
+};
+
+  BankAccount.prototype.rob = function() {
+
+};
 /* Step 37
  *
  * WIP
