@@ -462,13 +462,13 @@
  * @return {String}
  *
  */
-function purchaseLaptop(laptop) {
-  if(laptopCosts.hasOwnProperty(laptop)){
-    return laptopCosts[laptop].toString();
-    }else{
-      return -1;
-    }
-}
+  function purchaseLaptop(laptop) {
+    if(laptopCosts.hasOwnProperty(laptop)){
+      return laptopCosts[laptop].toString();
+      }else{
+        return -1;
+      }
+  }
 
 /* Step 29
  *
@@ -481,8 +481,13 @@ function purchaseLaptop(laptop) {
  * @return {Bool}
  *
  */
-
-
+  function canTalkAbout(club) {
+    if(club !== club_name){
+    return true;
+  }else{
+    return false;
+  }
+}
 /* Step 30
  *
  * Define an ES5 class named "Pen" with a property for
