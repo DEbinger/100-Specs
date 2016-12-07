@@ -314,7 +314,7 @@
     if (linuxFlavors.indexOf(typeOfLinux) > -1) {
       console.log('success');
       return true;
-    } else {
+    }else{
       console.log('failure');
       return false;
     }
@@ -340,10 +340,9 @@
     if(beers.hasOwnProperty(beerToDrink)){
       if(typeof beers[beerToDrink] === 'object'){
         return "This " + beerToDrink + " is " + beers[beerToDrink][0] + " and " + beers[beerToDrink][1] + " and...";
-      } else {
-        return "This " + beerToDrink + " is " + beers[beerToDrink] + ".";
-      }
-    } else {
+      }else{
+        return "This " + beerToDrink + " is " + beers[beerToDrink] + ".";}
+    }else{
       return false;
     }
   }
@@ -410,7 +409,7 @@
     if(planets.indexOf(currentPlanet) > -1){
       let randomPlanet = planets[Math.floor(Math.random()*planets.length)];
       return `I'm from ${currentPlanet}, but I wish I could go to ${randomPlanet}.`;
-    } else {
+    }else{
       return `${currentPlanet} is not a planet!`;
     }
   }
@@ -465,8 +464,8 @@ Person.prototype.earnMoney = function(zenny){
   function purchaseLaptop(laptop) {
     if(laptopCosts.hasOwnProperty(laptop)){
       return laptopCosts[laptop].toString();
-      }else{
-        return -1;
+    }else{
+      return -1;
       }
   }
 
@@ -483,9 +482,9 @@ Person.prototype.earnMoney = function(zenny){
  */
   function canTalkAbout(club) {
     if(club !== club_name){
-    return true;
-  }else{
-    return false;
+      return true;
+    }else{
+      return false;
   }
 }
 /* Step 30
@@ -554,7 +553,7 @@ Person.prototype.earnMoney = function(zenny){
   Garden.prototype.grow = function () {
     if(this.isWatered === true) {
       this.plantsTotal += 1;
-      }else{
+    }else{
       return false;
     }
   };
@@ -641,9 +640,9 @@ Person.prototype.earnMoney = function(zenny){
   PrincessLeia.prototype.marries = function(nerfherder){
   if(nerfherder === 'Han Solo'){
     return true;
-    }else if(nerfherder === 'Luke Skywalker'){
+  }else if(nerfherder === 'Luke Skywalker'){
     return "Gross!";
-    }else {
+  }else {
     return false;
   }
 };
@@ -672,7 +671,7 @@ function Stapler(color, maxPapers) {
 Stapler.prototype.staplePapers = function(paperBoi){
   if(paperBoi <= this.maxPapers){
     return true;
-  } else {
+  }else{
     return false;
   }
 };
@@ -727,13 +726,13 @@ Scientist.prototype = Object.create(Person.prototype);
 
 Scientist.prototype.addDiscipline = function(tesla){
   this.disciplines.push(tesla);
-  return this.disciplines;
+    return this.disciplines;
 };
 
 Scientist.prototype.checkDiscipline = function(einstein){
   if(this.disciplines.indexOf(einstein) > -1){
     return true;
-  } else {
+  }else{
     return false;
   }
 };
@@ -1035,12 +1034,12 @@ Scientist.prototype.addDiscovery = function(newton){
  * @param {string} color The shoe color
  */
 
-  class Shoe {
-    constructor(size, color) {
-      this.size = size;
-      this.color = color;
-    }
+class Shoe {
+  constructor(size, color) {
+    this.size = size;
+    this.color = color;
   }
+}
 
 /**
  * Step 56
@@ -1162,7 +1161,15 @@ let dinner = new Meal(['fish', 'vegetables']);
  *       Any other species => "Could not determine if warm-blooded"
  *
  */
-
+  Animal.prototype.isWarmBlooded = function() {
+    if (this.species === 'Fish' ) {
+      return false;
+    }else if ( this.species === 'Monkey' || this.species === 'Bird' ) {
+      return true;
+    }else{
+      return 'Could not determine if warm-blooded';
+    }
+  };
 
 /* Step 82
  *
@@ -1172,7 +1179,13 @@ let dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
-
+  Vehicle.prototype.drive = function(streetName) {
+    if(typeof streetName === 'string' && streetName !== ''){
+      return `Driving on ${streetName}`;
+    }else{
+      return 'Driving forward';
+      }
+  };
  /* Step 83
  *
  * Declare a Shape method called getType that returns a string
@@ -1190,7 +1203,28 @@ let dinner = new Meal(['fish', 'vegetables']);
  * Any other number => "Could not determine type"
  *
  */
-
+ Shape.prototype.getType = function (sides) {
+   switch(this.sides){
+    case 3:
+      return "triangle";
+    case 4:
+      return "quadrilateral";
+    case 5:
+      return "pentagon";
+    case 6:
+      return "hexagon";
+    case 7:
+      return "heptagon";
+    case 8:
+      return "octagon";
+    case 9:
+      return "nonagon";
+    case 10:
+      return "decagon";
+    default :
+      return "Could not determine type";
+  }
+ };
 
 /* Step 84
  *
@@ -1200,8 +1234,14 @@ let dinner = new Meal(['fish', 'vegetables']);
  * Return true if openBox opens the box, false otherwise.
  *
  */
-
-
+ Box.prototype.openBox = function(){
+  if(this.isOpen === false){
+    this.isOpen = true;
+      return true;
+    }else{
+      return false;
+   }
+};
  /* Step 85
  *
  * Declare a Door method called openClose that opens the door
@@ -1209,7 +1249,15 @@ let dinner = new Meal(['fish', 'vegetables']);
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
-
+ Door.prototype.openClose = function(){
+  if(this.isOpen === false){
+    this.isOpen = true;
+      return true;
+    }else if (this.isOpen === true) {
+    this.isOpen = false;
+      return false;
+   }
+};
 
 /* Step 86
  *
@@ -1217,7 +1265,9 @@ let dinner = new Meal(['fish', 'vegetables']);
  * the color and size of the shoe ("Found red shoes of size 7").
  *
  */
-
+ Shoe.prototype.findShoes = function () {
+   return `Found ${this.color} shoes of size ${this.size}`;
+ };
 
  /* Step 87
  *
@@ -1227,7 +1277,13 @@ let dinner = new Meal(['fish', 'vegetables']);
  * storiesTooTall, return true, else return false.
  *
  */
-
+ House.prototype.isATallStory = function(storiesTooTall) {
+    if (this.stories >= storiesTooTall) {
+      return true;
+    }else{
+      return false;
+    }
+ };
 
  /* Step 88
  *
@@ -1238,7 +1294,15 @@ let dinner = new Meal(['fish', 'vegetables']);
  * Return true if isOn is true, false otherwise.
  *
  */
-
+ Lightbulb.prototype.flipSwitch = function(on) {
+  if(on === 'on') {
+    this.isOn = true;
+    return true;
+  }else{
+    this.isOn = false;
+    return false;
+  }
+ };
 
  /* Step 89
  *
@@ -1247,7 +1311,13 @@ let dinner = new Meal(['fish', 'vegetables']);
  * and the dayOfTheWeek is "Monday", return true.  Else return false.
  *
  */
-
+ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
+   if (this.flavor === 'chocolate' && dayOfTheWeek === 'Monday') {
+    return true;
+   }else{
+    return false;
+   }
+ };
 
  /* Step 90
  *
@@ -1262,7 +1332,15 @@ let dinner = new Meal(['fish', 'vegetables']);
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
  *
  */
-
+ Meal.prototype.containsJunkFood = function() {
+    let junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
+  for(let i = 0; i < junkFood.length; i ++) {
+    if (this.foods.indexOf(junkFood[i]) > -1) {
+      return true;
+    }
+  }
+  return false;
+};
 
  /* Steps 91 to 100
  *
