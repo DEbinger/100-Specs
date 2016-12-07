@@ -1355,9 +1355,9 @@ let dinner = new Meal(['fish', 'vegetables']);
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+let warmBloodedAnimal = new Animal('Monkey', 'male').isWarmBlooded();
+let coldBloodedAnimal = new Animal('Fish', 'male').isWarmBlooded();
+let notWarmOrColdAnimal = new Animal('Wolf', 'male').isWarmBlooded();
 
 
 /* Step 92
@@ -1366,8 +1366,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+let streetDriving = new Vehicle('Honda', 'Civic').drive('Kapolei Parkway');
+let forwardDriving = new Vehicle('Toyota', 'Venza').drive(false);
 
 
  /* Step 93
@@ -1376,8 +1376,8 @@ var forwardDriving;
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+let decagon = new Shape(10).getType();
+let polygon = new Shape(undefined).getType();
 
 
 /* Step 94
@@ -1386,8 +1386,8 @@ var polygon;
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+let openAClosedBox = new Box('HearthStone Cards', false).openBox();
+let closeAnOpenBox = new Box('Legendaries',true).openBox();
 
 
  /* Step 95
@@ -1396,8 +1396,8 @@ var closeAnOpenBox;
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+let openAClosedDoor = new Door(false).openClose();
+let closeAnOpenDoor = new Door(true).openClose();
 
 
 /* Step 96
@@ -1406,8 +1406,8 @@ var closeAnOpenDoor;
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7;
-var blackShoesSize10;
+let redShoesSize7 = new Shoe(7,'red').findShoes();
+let blackShoesSize10 = new Shoe(10,'black').findShoes();
 
 
  /* Step 97
@@ -1416,8 +1416,8 @@ var blackShoesSize10;
  * and assign the values to each variable below.
  *
  */
-var farTooTallAStory;
-var shortStory;
+let farTooTallAStory = new House(888).isATallStory(888);
+let shortStory = new House(2).isATallStory(8);
 
 
  /* Step 98
@@ -1426,8 +1426,8 @@ var shortStory;
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+var kitchenLightsOn = new Lightbulb(true).flipSwitch('on');
+var porchLightsOff = new Lightbulb(false).flipSwitch('');
 
 
  /* Step 99
@@ -1436,8 +1436,8 @@ var porchLightsOff;
  * and assign the values to each variable below.
  *
  */
-var cookieMonsterPwns;
-var cookieMonsterBlocked;
+let cookieMonsterPwns = new Cookie('chocolate').swipedByCookieMonster('Monday');
+let cookieMonsterBlocked = new Cookie('raisin').swipedByCookieMonster('Sunday');
 
 
  /* Step 100
@@ -1446,5 +1446,5 @@ var cookieMonsterBlocked;
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+let badForYou = new Meal('ice cream').containsJunkFood();
+let goodForYou = new Meal('tofu').containsJunkFood();
