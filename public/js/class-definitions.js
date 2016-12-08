@@ -747,7 +747,7 @@ Scientist.prototype.addDiscovery = function(newton){
     case this.discoveries.length === 3:
       return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
     default:
-      return "Nothing discovered...or too many discoveries but the test passed woohoo";
+      return "Nothing discovered...or too many discoveries";
   }
 };
 
