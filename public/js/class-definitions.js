@@ -624,8 +624,8 @@ Person.prototype.earnMoney = function(zenny){
     this.isInTrouble = null;
 }
 
-  PrincessLeia.prototype = Object.create(Person.prototype);
-
+  PrincessLeia.prototype = Object.create(Person.prototype, {constructor: PrincessLeia});
+//why the {construtor: PrincessLeia} --to create an actual object
 
   PrincessLeia.prototype.shootsGun = function() {
     this.isInTrouble = false;
@@ -747,7 +747,7 @@ Scientist.prototype.addDiscovery = function(newton){
     case this.discoveries.length === 3:
       return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
     default:
-      return "Nothing discovered...or too many discoveries";
+      return "Eureka and Great Ceaser's ghost";
   }
 };
 
@@ -1426,8 +1426,8 @@ let shortStory = new House(2).isATallStory(8);
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn = new Lightbulb(true).flipSwitch('on');
-var porchLightsOff = new Lightbulb(false).flipSwitch('');
+let kitchenLightsOn = new Lightbulb(true).flipSwitch('on');
+let porchLightsOff = new Lightbulb(false).flipSwitch('');
 
 
  /* Step 99
